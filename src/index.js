@@ -31,17 +31,17 @@ function createCatList() {
 
             selectCat.innerHTML = optionsList;
 
-            //стилізуємо селект з доп бібліотеки SlimSelect 
+            
             new SlimSelect({
                 select: selectCat
             })
-            // Отримали дані успішно, ховаємо лоадер показуємо селект
+           
             loader.classList.add('is-hidden');
             selectCat.classList.remove('is-hidden')
         })
         .catch(error => {
             Notify.failure('Oops! Something went wrong! Try reloading the page!')
-        });
+        }).finally(() => loader.classList.add('is-hidden') );
 }
 
 createCatList();

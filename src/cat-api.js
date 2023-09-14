@@ -1,8 +1,8 @@
-const BASE_URL = `https://api.thecatapi.com/v1/`;
+const BASE_URL = 'https://api.thecatapi.com/v1';
 
 import axios from "axios";
 
-axios.defaults.headers.common["x-api-key"] = "live_711r8yTv9xG2fO9BQTLfum7QEckQQCT3OFOGlcwBlvo8Km84wEsjWYirfj4xrscp'";
+axios.defaults.headers.common["x-api-key"] = " api_key=live_711r8yTv9xG2fO9BQTLfum7QEckQQCT3OFOGlcwBlvo8Km84wEsjWYirfj4xrscp";
 
 export function fetchBreeds() {
     return axios.get(`${BASE_URL}/breeds`)
