@@ -17,12 +17,7 @@ selectCat.addEventListener("change", onSelectChange)
 
 
 function createCatList() {
-    
-    loader.classList.remove('is-hidden');
-    selectCat.classList.add('is-hidden');
-    error.classList.add('is-hidden')
-
-    
+        
     fetchBreeds()
         .then(data => {
 
