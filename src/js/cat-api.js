@@ -9,13 +9,7 @@ export function fetchBreeds() {
         .then(response => {
            
             return response.data;
-        })
-        .catch(error => {
-
-            throw new Error("Помилка запиту:", error.message);
-        });
-
-}
+        })}
 
 
 export function fetchCatByBreed(breedId) {
@@ -23,10 +17,4 @@ export function fetchCatByBreed(breedId) {
         .then(response => {
           
             return response.data;
-        })
-        .catch(error => {
-
-            throw new Error("Помилка запиту:", error.message);
-        });
-
-}
+        })}
